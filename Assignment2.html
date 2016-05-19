@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			input {
+				padding: 5px;
+				border:1px solid red;
+			}
+			body {
+				position: absolute;
+				top: 20px;
+				left: 600px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" method="get" autocomplete="on">
+			<input type="email" title="Please fill out this field" width="250px" name="email" placeholder="Email" required autocomplete="off"  autofocus /><br /><br />
+			<input type="password" name="password"  placeholder="Password" pattern=".{6,}" title="Enter minimum 6 characters" required/><br /><br />
+			<input type="url" name="url"  placeholder="Your project URL" required/><br /><br />
+			<input type="date" name="date"  placeholder="Project completion data" width="250px" required/><br /><br />
+			<input type="month" name="month"  placeholder="Current month" required/><br /><br />
+			<input type="week" name="week"  placeholder="Current week" required/><br /><br />
+			<input type="time" name="time"  placeholder="Current time" required/><br /><br />
+			Select color:<input type="color" name="color" required/><br /><br />
+			Age:&nbsp;&nbsp;0<input type="range" name="age" value="75" min="0" max="100" required/>100<br /><br />
+			<input type="text" name="hobbies"  list="hobbies" required/><br /><br />
+			<datalist id="hobbies">
+				<option value="Cricket">
+				<option value="Football">
+				<option value="Cycling">
+				<option value="Soccer">
+			</datalist>
+			<input type="submit" value="Submit Query">
+		</form>
+	</body>
+</html>
